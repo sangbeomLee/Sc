@@ -21,12 +21,12 @@
 #define STATUS_EXIT_ERROR 1
 #define STATUS_EXIT_NO_ERROR 2
 
-struct ShotOptions
+struct ShotOptions // this is struct for Options. 
 {
     int status;
     int clipboard;
     const char *output_path;
-    ShotRegion region;
+    ShotRegion region; // what is the ShotRegion?
 };
 
 static void show_usage(void)
