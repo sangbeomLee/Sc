@@ -1,4 +1,4 @@
-#include <assert.h>
+#include <assert.h> //yura __ test 
 #include <getopt.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -169,8 +169,6 @@ static struct ShotOptions parse_options(
                         monitor_mgr->monitor_count - 1);
                     region_result = ERR_INVALID_ARGUMENT;
                 }
-                else
-                {
                     region_result = update_region_from_monitor(
                         &options.region, monitor_mgr->monitors[n]);
                 }
