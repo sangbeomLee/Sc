@@ -275,12 +275,12 @@ static char *get_random_name()
     return name;
 }
 
-static char *get_output_path(const char *path)
+static char *get_output_path(const char *path) //set file name
 {
-    if (!path || !*path)
-        return get_random_name();
+    if (!path || !*path) //입력받은 경로가 없을 경우
+        return get_random_name();// 무작위로 이름결정
 
-    const char *end = &path[strlen(path) - 1];
+    const char *end = &path[strlen(path) - 1]; //입력받은 경로의 끝을 가리키는 포인터를 만든다.
     if (*end == '/' || *end == '\\')
     {
         char *random_name = get_random_name();
