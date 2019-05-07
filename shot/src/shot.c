@@ -21,25 +21,25 @@
 #define STATUS_EXIT_ERROR 1
 #define STATUS_EXIT_NO_ERROR 2
 
-struct ShotOptions
+struct ShotOptions // this is struct for Options. 
 {
     int status;
     int clipboard;
     const char *output_path;
-    ShotRegion region;
+    ShotRegion region; //IDK
 };
 
-static void show_usage(void)
+static void show_usage(void) //how to use
 {
     printf(help_str);
 }
 
-static void show_version(void)
+static void show_version(void) //shot_version
 {
     printf("shot v%s\n", version_long);
 }
 
-static void show_usage_hint(const char *program_name)
+static void show_usage_hint(const char *program_name) // how to sue Especially
 {
     fprintf(stderr, "Try '%s --help' for more information.\n", program_name);
 }
